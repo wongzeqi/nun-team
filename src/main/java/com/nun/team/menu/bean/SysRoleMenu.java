@@ -1,7 +1,7 @@
-package com.nun.team.authority.bean;
+package com.nun.team.menu.bean;
 
 
-import com.nun.team.authority.bean.base.BaseEntity;
+import com.nun.team.base.bean.BaseEntity;
 import lombok.Data;
 
 /**

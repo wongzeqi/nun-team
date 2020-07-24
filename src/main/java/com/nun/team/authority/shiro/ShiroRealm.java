@@ -80,4 +80,11 @@ public class ShiroRealm extends AuthorizingRealm {
 		return info;
 	}
 
+	/**
+	 * 清理缓存权限
+	 */
+	public void clearCachedAuthorizationInfo()
+	{
+		this.clearCachedAuthorizationInfo(SecurityUtils.getSubject().getPrincipals());
+	}
 }

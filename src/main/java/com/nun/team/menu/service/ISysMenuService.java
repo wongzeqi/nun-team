@@ -1,8 +1,8 @@
-package com.nun.team.authority.service;
+package com.nun.team.menu.service;
 
 
 import com.nun.team.authority.bean.SysRole;
-import com.nun.team.authority.bean.SysMenu;
+import com.nun.team.menu.bean.SysMenu;
 import com.nun.team.authority.bean.SysUser;
 
 import java.util.List;

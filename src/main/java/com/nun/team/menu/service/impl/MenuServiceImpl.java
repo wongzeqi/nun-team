@@ -1,4 +1,4 @@
-package com.nun.team.authority.service.impl;
+package com.nun.team.menu.service.impl;
 
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.nun.team.authority.mapper;
+package com.nun.team.menu.mapper;
 
 
-import com.nun.team.authority.bean.SysRoleMenu;
+import com.nun.team.menu.bean.SysRoleMenu;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

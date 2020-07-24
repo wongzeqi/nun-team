@@ -1,11 +1,11 @@
-package com.nun.team.authority.service.impl;
+package com.nun.team.menu.service.impl;
 
 import com.nun.team.authority.bean.SysRole;
-import com.nun.team.authority.bean.SysMenu;
 import com.nun.team.authority.bean.SysUser;
-import com.nun.team.authority.mapper.SysMenuMapper;
-import com.nun.team.authority.mapper.SysRoleMenuMapper;
-import com.nun.team.authority.service.ISysMenuService;
+import com.nun.team.menu.mapper.SysMenuMapper;
+import com.nun.team.menu.mapper.SysRoleMenuMapper;
+import com.nun.team.menu.bean.SysMenu;
+import com.nun.team.menu.service.ISysMenuService;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

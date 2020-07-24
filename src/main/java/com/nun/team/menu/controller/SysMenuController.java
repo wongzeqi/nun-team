@@ -1,7 +1,7 @@
-package com.nun.team.authority.controller;
+package com.nun.team.menu.controller;
 
-import com.nun.team.authority.bean.SysMenu;
-import com.nun.team.authority.service.ISysMenuService;
+import com.nun.team.menu.bean.SysMenu;
+import com.nun.team.menu.service.ISysMenuService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/menu")
 public class SysMenuController {
-    private String prefix = "menu";
+    private String prefix = "/menu";
 
     @Autowired
     private ISysMenuService menuService;
@@ -28,7 +28,7 @@ public class SysMenuController {
     @GetMapping("/menu")
     public String menu()
     {
-        return prefix + "/menu";
+        return "menu";
     }
 
     @RequiresPermissions("system:menu:list")

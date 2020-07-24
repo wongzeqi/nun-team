@@ -1,6 +1,6 @@
-package com.nun.team.authority.mapper;
+package com.nun.team.menu.mapper;
 
-import com.nun.team.authority.bean.SysMenu;
+import com.nun.team.menu.bean.SysMenu;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

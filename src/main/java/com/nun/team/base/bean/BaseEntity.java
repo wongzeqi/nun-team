@@ -1,4 +1,4 @@
-package com.nun.team.authority.bean.base;
+package com.nun.team.base.bean;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
