@@ -1,7 +1,10 @@
 package com.nun.team.menu.controller;
 
+import com.nun.team.authority.bean.result.ResponseBo;
+import com.nun.team.base.response.BaseResponse;
 import com.nun.team.menu.bean.SysMenu;
 import com.nun.team.menu.service.ISysMenuService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +21,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/menu")
+@Slf4j
 public class SysMenuController {
     private String prefix = "/menu";
 
@@ -28,7 +32,7 @@ public class SysMenuController {
     @GetMapping("/menu")
     public String menu()
     {
-        return "menu";
+        return prefix + "/menu";
     }
 
     @RequiresPermissions("system:menu:list")

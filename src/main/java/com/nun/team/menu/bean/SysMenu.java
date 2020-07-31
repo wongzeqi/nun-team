@@ -47,6 +47,20 @@ public class SysMenu extends BaseEntity
     /** 子菜单 */
     private List<SysMenu> children = new ArrayList<SysMenu>();
 
-
-
+    @Override
+    public String toString() {
+        return "SysMenu{" +
+                "menuId=" + menuId +
+                ", menuName='" + menuName + '\'' +
+                ", parentName='" + parentName + '\'' +
+                ", parentId=" + parentId +
+                ", orderNum='" + orderNum + '\'' +
+                ", url='" + url + '\'' +
+                ", menuType='" + menuType + '\'' +
+                ", visible='" + visible + '\'' +
+                ", perms='" + perms + '\'' +
+                ", icon='" + icon + '\'' +
+                ", children=" + children +
+                '}';
+    }
 }
