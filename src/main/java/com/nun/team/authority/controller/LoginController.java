@@ -26,6 +26,9 @@ public class LoginController {
 	@ResponseBody
 	public ResponseBo login(String username, String password, Boolean rememberMe) {
 		password = MD5Utils.encrypt(username, password);
+		if(rememberMe == null){
+			rememberMe = false;
+		}
 		UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
 		Subject subject = SecurityUtils.getSubject();
 		try {

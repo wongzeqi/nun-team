@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-	<meta charset="UTF-8">
-	<title>登录</title>
-	<link rel="stylesheet" th:href="@{/css/login.css}" type="text/css">
-	<script th:src="@{/js/jquery-1.11.1.min.js}"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>登录</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/font-awesome.css}" rel="stylesheet">
+    <link th:href="@{/css/animate.css}" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <link th:href="@{/css/login.css}" rel="stylesheet">
+    <script th:src="@{/js/jquery.min.js}"></script>
 </head>
-<body>
-	<div class="login-page">
-	  <div class="form">
-	      <input type="text" placeholder="用户名" name="username" required="required"/>
-	      <input type="password" placeholder="密码" name="password" required="required"/>
-	      <p><input type="checkbox" name="rememberMe" />记住我</p>
-	      <button onclick="login()">登录</button>
-	  </div>
-	</div>
+
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-box">
+                    <input name="username" type="text" class="form-control uname" placeholder="用户名" />
+                    <input name="password" type="password" class="form-control pword m-b" placeholder="密码" />
+                    <p><input type="checkbox" name="rememberMe" />记住我</p>
+                    <a href="">忘记密码了？</a>
+                    <button class="btn btn-successindex.html" onclick="login()">登录</button>
+                </div>
+            </div>
+        </div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; hAdmin
+            </div>
+        </div>
+    </div>
 </body>
-<script th:inline="javascript"> 
+<script th:inline="javascript">
 	var ctx = [[@{/}]];
     function login() {
+        alert("sss");
     	var username = $("input[name='username']").val();
     	var password = $("input[name='password']").val();
     	var rememberMe =$("input[name='rememberMe']").is(':checked');
